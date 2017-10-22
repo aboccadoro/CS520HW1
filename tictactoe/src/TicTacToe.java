@@ -85,11 +85,7 @@ public class TicTacToe {
                                            (blocks[0][0].getText().equals(blocks[1][1].getText()) &&
                                             blocks[1][1].getText().equals(blocks[2][2].getText()))) {
                                         playerturn.setText("Player 1 wins!");
-                                        for(int i=0; i<3; i++) {
-                                            for(int j=0; j<3; j++) {
-                                                blocks[i][j].setEnabled(false);
-                                            }
-                                        }
+                                        disableBoard();
                                     } else if(movesLeft==0) {
                                         playerturn.setText("Game ends in a draw");
                                     }
@@ -104,11 +100,7 @@ public class TicTacToe {
                                            (blocks[0][1].getText().equals(blocks[1][1].getText()) &&
                                             blocks[1][1].getText().equals(blocks[2][1].getText()))) {
                                         playerturn.setText("Player 1 wins!");
-                                        for(int i=0; i<3; i++) {
-                                            for(int j = 0;j<3;j++) {
-                                                blocks[i][j].setEnabled(false);
-                                            }
-                                        }
+                                        disableBoard();
                                     } else if(movesLeft==0) {
                                         playerturn.setText("Game ends in a draw");
                                     }
@@ -123,11 +115,7 @@ public class TicTacToe {
                                            (blocks[0][2].getText().equals(blocks[1][2].getText()) &&
                                             blocks[1][2].getText().equals(blocks[2][2].getText()))) {
                                         playerturn.setText("Player 1 wins!");
-                                        for(int i = 0;i<3;i++) {
-                                            for(int j = 0;j<3;j++) {
-                                                blocks[i][j].setEnabled(false);
-                                            }
-                                        }
+                                        disableBoard();
                                     } else if(movesLeft==0) {
                                         playerturn.setText("Game ends in a draw");
                                     }
@@ -142,11 +130,7 @@ public class TicTacToe {
                                            (blocks[1][0].getText().equals(blocks[0][0].getText()) &&
                                             blocks[0][0].getText().equals(blocks[2][0].getText()))) {
                                         playerturn.setText("Player 1 wins!");
-                                        for(int i = 0;i<3;i++) {
-                                            for(int j = 0;j<3;j++) {
-                                                blocks[i][j].setEnabled(false);
-                                            }
-                                        }
+                                        disableBoard();
                                     } else if(movesLeft==0) {
                                         playerturn.setText("Game ends in a draw");
                                     }
@@ -165,11 +149,7 @@ public class TicTacToe {
                                            (blocks[1][1].getText().equals(blocks[0][2].getText()) &&
                                             blocks[0][2].getText().equals(blocks[2][0].getText()))) {
                                         playerturn.setText("Player 1 wins!");
-                                        for(int i = 0;i<3;i++) {
-                                            for(int j = 0;j<3;j++) {
-                                                blocks[i][j].setEnabled(false);
-                                            }
-                                        }
+                                        disableBoard();
                                     } else if(movesLeft==0) {
                                         playerturn.setText("Game ends in a draw");
                                     }
@@ -184,11 +164,7 @@ public class TicTacToe {
                                            (blocks[1][2].getText().equals(blocks[1][1].getText()) &&
                                             blocks[1][1].getText().equals(blocks[1][0].getText()))) {
                                         playerturn.setText("Player 1 wins!");
-                                        for(int i = 0;i<3;i++) {
-                                            for(int j = 0;j<3;j++) {
-                                                blocks[i][j].setEnabled(false);
-                                            }
-                                        }
+                                        disableBoard();
                                     } else if(movesLeft==0) {
                                         playerturn.setText("Game ends in a draw");
                                     }
@@ -205,11 +181,7 @@ public class TicTacToe {
                                            (blocks[2][0].getText().equals(blocks[1][1].getText()) &&
                                             blocks[1][1].getText().equals(blocks[0][2].getText()))) {
                                         playerturn.setText("Player 1 wins!");
-                                        for(int i = 0;i<3;i++) {
-                                            for(int j = 0;j<3;j++) {
-                                                blocks[i][j].setEnabled(false);
-                                            }
-                                        }
+                                        disableBoard();
                                     } else if(movesLeft==0) {
                                         playerturn.setText("Game ends in a draw");
                                     }
@@ -224,11 +196,7 @@ public class TicTacToe {
                                            (blocks[2][1].getText().equals(blocks[1][1].getText()) &&
                                             blocks[1][1].getText().equals(blocks[0][1].getText()))) {
                                         playerturn.setText("Player 1 wins!");
-                                        for(int i = 0;i<3;i++) {
-                                            for(int j = 0;j<3;j++) {
-                                                blocks[i][j].setEnabled(false);
-                                            }
-                                        }
+                                        disableBoard();
                                     } else if(movesLeft==0) {
                                         playerturn.setText("Game ends in a draw");
                                     }
@@ -245,11 +213,7 @@ public class TicTacToe {
                                            (blocks[2][2].getText().equals(blocks[1][1].getText()) &&
                                             blocks[1][1].getText().equals(blocks[0][0].getText()))) {
                                         playerturn.setText("Player 1 wins!");
-                                        for(int i = 0;i<3;i++) {
-                                            for(int j = 0;j<3;j++) {
-                                                blocks[i][j].setEnabled(false);
-                                            }
-                                        }
+                                        disableBoard();
                                     } else if(movesLeft==0) {
                                         playerturn.setText("Game ends in a draw");
                                     }
@@ -269,11 +233,7 @@ public class TicTacToe {
                                            (blocks[0][0].getText().equals(blocks[1][1].getText()) &&
                                             blocks[1][1].getText().equals(blocks[2][2].getText()))) {
                                         playerturn.setText("Player 2 wins!");
-                                        for(int i = 0;i<3;i++) {
-                                            for(int j = 0;j<3;j++) {
-                                                blocks[i][j].setEnabled(false);
-                                            }
-                                        }
+                                        disableBoard();
                                     } else if(movesLeft==0) {
                                         playerturn.setText("Game ends in a draw");
                                     }
@@ -288,11 +248,7 @@ public class TicTacToe {
                                            (blocks[0][1].getText().equals(blocks[1][1].getText()) &&
                                             blocks[1][1].getText().equals(blocks[2][1].getText()))) {
                                         playerturn.setText("Player 2 wins!");
-                                        for(int i = 0;i<3;i++) {
-                                            for(int j = 0;j<3;j++) {
-                                                blocks[i][j].setEnabled(false);
-                                            }
-                                        }
+                                        disableBoard();
                                     } else if(movesLeft==0) {
                                         playerturn.setText("Game ends in a draw");
                                     }
@@ -307,11 +263,7 @@ public class TicTacToe {
                                            (blocks[0][2].getText().equals(blocks[1][2].getText()) &&
                                             blocks[1][2].getText().equals(blocks[2][2].getText()))) {
                                         playerturn.setText("Player 2 wins!");
-                                        for(int i = 0;i<3;i++) {
-                                            for(int j = 0;j<3;j++) {
-                                                blocks[i][j].setEnabled(false);
-                                            }
-                                        }
+                                        disableBoard();
                                     } else if(movesLeft==0) {
                                         playerturn.setText("Game ends in a draw");
                                     }
@@ -326,11 +278,7 @@ public class TicTacToe {
                                            (blocks[1][0].getText().equals(blocks[0][0].getText()) &&
                                             blocks[0][0].getText().equals(blocks[2][0].getText()))) {
                                         playerturn.setText("Player 2 wins!");
-                                        for(int i = 0;i<3;i++) {
-                                            for(int j = 0;j<3;j++) {
-                                                blocks[i][j].setEnabled(false);
-                                            }
-                                        }
+                                        disableBoard();
                                     } else if(movesLeft==0) {
                                         playerturn.setText("Game ends in a draw");
                                     }
@@ -349,11 +297,7 @@ public class TicTacToe {
                                            (blocks[1][1].getText().equals(blocks[0][2].getText()) &&
                                             blocks[0][2].getText().equals(blocks[2][0].getText()))) {
                                         playerturn.setText("Player 2 wins!");
-                                        for(int i = 0;i<3;i++) {
-                                            for(int j = 0;j<3;j++) {
-                                                blocks[i][j].setEnabled(false);
-                                            }
-                                        }
+                                        disableBoard();
                                     } else if(movesLeft==0) {
                                         playerturn.setText("Game ends in a draw");
                                     }
@@ -368,11 +312,7 @@ public class TicTacToe {
                                            (blocks[1][2].getText().equals(blocks[1][1].getText()) &&
                                             blocks[1][1].getText().equals(blocks[1][0].getText()))) {
                                         playerturn.setText("Player 2 wins!");
-                                        for(int i = 0;i<3;i++) {
-                                            for(int j = 0;j<3;j++) {
-                                                blocks[i][j].setEnabled(false);
-                                            }
-                                        }
+                                        disableBoard();
                                     } else if(movesLeft==0) {
                                         playerturn.setText("Game ends in a draw");
                                     }
@@ -389,11 +329,7 @@ public class TicTacToe {
                                            (blocks[2][0].getText().equals(blocks[1][1].getText()) &&
                                             blocks[1][1].getText().equals(blocks[0][2].getText()))) {
                                         playerturn.setText("Player 2 wins!");
-                                        for(int i = 0;i<3;i++) {
-                                            for(int j = 0;j<3;j++) {
-                                                blocks[i][j].setEnabled(false);
-                                            }
-                                        }
+                                        disableBoard();
                                     } else if(movesLeft==0) {
                                         playerturn.setText("Game ends in a draw");
                                     }
@@ -408,11 +344,7 @@ public class TicTacToe {
                                            (blocks[2][1].getText().equals(blocks[1][1].getText()) &&
                                             blocks[1][1].getText().equals(blocks[0][1].getText()))) {
                                         playerturn.setText("Player 2 wins!");
-                                        for(int i = 0;i<3;i++) {
-                                            for(int j = 0;j<3;j++) {
-                                                blocks[i][j].setEnabled(false);
-                                            }
-                                        }
+                                        disableBoard();
                                     } else if(movesLeft==0) {
                                         playerturn.setText("Game ends in a draw");
                                     }
@@ -429,11 +361,7 @@ public class TicTacToe {
                                            (blocks[2][2].getText().equals(blocks[1][1].getText()) &&
                                             blocks[1][1].getText().equals(blocks[0][0].getText()))) {
                                         playerturn.setText("Player 2 wins!");
-                                        for(int i = 0;i<3;i++) {
-                                            for(int j = 0;j<3;j++) {
-                                                blocks[i][j].setEnabled(false);
-                                            }
-                                        }
+                                        disableBoard();
                                     } else if(movesLeft==0) {
                                         playerturn.setText("Game ends in a draw");
                                     }
@@ -444,6 +372,17 @@ public class TicTacToe {
                 });
             }
         }
+    }
+
+    /**
+     * Disable all the game board buttons.
+     */
+    public void disableBoard() {
+    	for(int i = 0;i<3;i++) {
+        	for(int j = 0;j<3;j++) {
+        		blocks[i][j].setEnabled(false);
+        	}
+       	}
     }
 
     /**

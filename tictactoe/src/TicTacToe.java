@@ -26,7 +26,8 @@ public class TicTacToe {
     }
 
     /**
-     * The default constructor, which initializes the GUI.
+     * The default constructor, which initializes the GUI and sets
+     * up the JButtons for the game board.
      */
     public TicTacToe() {
         gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -55,7 +56,17 @@ public class TicTacToe {
             }
         });
 
-        // Initialize a JButton for each cell of the 3x3 game board.
+        /** 
+         * Initialize a JButton for each cell of the 3x3 game board.
+         * Each button will be an ActionListener that waits for the user
+         * to click the designated JButton within the JPanel. There are
+         * a number of possible outocmes within the game and each conditional
+         * below accounts for the possible game outcomes for each button
+         * when pressed. The text of the JButtons are compared on each
+         * click with the surrounding JButtons for concurring buttons
+         * of the same text. There are 9 buttons and 2 players, hence the
+         * 18 possible conditional checkpoints below.
+         */
         for(int row = 0; row<3 ;row++) {
             for(int column = 0; column<3 ;column++) {
                 blocks[row][column] = new JButton();

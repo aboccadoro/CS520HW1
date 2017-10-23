@@ -208,8 +208,8 @@ public class TicTacToe {
                                 if(movesLeft<7) {
                                     if((blocks[2][2].getText().equals(blocks[2][1].getText()) &&
                                             blocks[2][1].getText().equals(blocks[2][0].getText())) ||
-                                           (blocks[2][2].getText().equals(blocks[2][1].getText()) &&
-                                            blocks[2][1].getText().equals(blocks[2][0].getText())) ||
+                                           (blocks[2][2].getText().equals(blocks[1][2].getText()) &&
+                                            blocks[1][2].getText().equals(blocks[0][2].getText())) ||
                                            (blocks[2][2].getText().equals(blocks[1][1].getText()) &&
                                             blocks[1][1].getText().equals(blocks[0][0].getText()))) {
                                         playerturn.setText("Player 1 wins!");
@@ -356,8 +356,8 @@ public class TicTacToe {
                                 if(movesLeft<7) {
                                     if((blocks[2][2].getText().equals(blocks[2][1].getText()) &&
                                             blocks[2][1].getText().equals(blocks[2][0].getText())) ||
-                                           (blocks[2][2].getText().equals(blocks[2][1].getText()) &&
-                                            blocks[2][1].getText().equals(blocks[2][0].getText())) ||
+                                           (blocks[2][2].getText().equals(blocks[1][2].getText()) &&
+                                            blocks[1][2].getText().equals(blocks[0][2].getText())) ||
                                            (blocks[2][2].getText().equals(blocks[1][1].getText()) &&
                                             blocks[1][1].getText().equals(blocks[0][0].getText()))) {
                                         playerturn.setText("Player 2 wins!");
